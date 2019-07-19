@@ -3,7 +3,7 @@
 ideal / intended structure for data dictionary of different types of posts the new app will handle.
 <span style="color:orange !important;">
 
-```js
+```
 - index / home
 	- work / all
 		- brand

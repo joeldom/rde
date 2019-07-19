@@ -15,8 +15,6 @@ var swig = require("gulp-swig");
 var del = require("del");
 var runSequence = require("run-sequence");
 
-//THIS NEEDS ADJUSTED
-//var config = require('./config.json');
 
 // Basic Gulp task syntax
 gulp.task("hello", function() {
@@ -37,7 +35,7 @@ gulp.task("bye", function() {
 gulp.task("browserSync", function() {
   browserSync({
     server: {
-      //baseDir: "style-guide",
+      //baseDir: "styles",
       baseDir: "./",
       directory: true,
       index: "index.html"
@@ -47,10 +45,10 @@ gulp.task("browserSync", function() {
 
 //Run SASS preprocess
 gulp.task("sass", function() {
-  //return gulp.src('style-guide/sass/**/*.scss') // Gets all files ending with .scss in style-guide/scss and children dirs
+  //return gulp.src('styles/sass/**/*.scss') // Gets all files ending with .scss in styles/scss and children dirs
   return (
     gulp
-      //.src("style-guide/sass/global.scss") // Gets specific file
+      //.src("styles/sass/global.scss") // Gets specific file
       .src("./sass/global.scss") // Gets specific file
       // .pipe(sourcemaps.init())
       // .pipe(sourcemaps.write("."))
@@ -67,7 +65,7 @@ gulp.task("sass", function() {
 
 gulp.task("prettify", function() {
   gulp
-    .src("style-guide/**/*.html")
+    .src("styles/**/*.html")
     .pipe(prettify({ indent_size: 2 }))
     .pipe(gulp.dest("dist"));
 });
@@ -97,7 +95,7 @@ gulp.task("useref", function() {
 gulp.task("images", function() {
   return (
     gulp
-      .src("style-guide/images/**/*.+(png|jpg|jpeg|gif|svg)")
+      .src("styles/images/**/*.+(png|jpg|jpeg|gif|svg)")
       // Caching images that ran through imagemin
       .pipe(
         cache(
@@ -112,7 +110,7 @@ gulp.task("images", function() {
 
 // Copying fonts
 gulp.task("fonts", function() {
-  return gulp.src("style-guide/fonts/**/*").pipe(gulp.dest("dist/fonts"));
+  return gulp.src("styles/fonts/**/*").pipe(gulp.dest("dist/fonts"));
 });
 
 // Cleaning

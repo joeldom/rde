@@ -9,8 +9,18 @@
 /coverage
 
 # production
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
 /build
 .env
+
+# executables
+*.swf
+*.air
+*.ipa
+*.apk
 
 # misc
 .DS_Store
@@ -18,6 +28,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.settings/
 
 npm-debug.log*
 yarn-debug.log*

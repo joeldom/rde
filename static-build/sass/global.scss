@@ -1,9 +1,25 @@
 //global.scss
-// @import "warning";
-// @import "variables";
-// @import "typography";
-// @import "structure";
-// @import "reset";
-@import "sass/pallette";
-@import "style-guide";
-@import "side-scroll";
+
+/////////////////////////////////////
+//   defaults
+/////////////////////////////////////
+
+/////////////////////////////////////
+//   dependencies
+/////////////////////////////////////
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+/////////////////////////////////////
+//   fonts
+/////////////////////////////////////
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700");
+
+/////////////////////////////////////
+//   imports
+/////////////////////////////////////
+@import "warning";
+@import "reset";
+@import "variables";
+@import "typography";
+@import "structure";
+@import "pallette";
