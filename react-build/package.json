@@ -9,7 +9,7 @@
     "lint-staged": "^8.1.0",
     "mdi-react": "^4.4.0",
     "node-sass": "^4.10.0",
-    "npm": "^6.7.0",
+    "npm": "^6.13.4",
     "prettier": "^1.15.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
