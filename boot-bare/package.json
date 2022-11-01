@@ -30,7 +30,7 @@
         "jquery": "3.3.1",
         "corejs-typeahead": "^1.2.1",
         "eslint": "^4.8.0",
-        "gulp": "^3.9.1",
+        "gulp": "^4.0.2",
         "gulp-append-prepend": "^1.0.4",
         "gulp-autoprefixer": "^4.0.0",
         "gulp-bless": "^4.0.0",
@@ -52,6 +52,6 @@
     },
     "devDependencies": {
         "browser-sync": "2.24.6",
-        "gulp": "^3.9.1"
+        "gulp": "^4.0.2"
     }
 }
